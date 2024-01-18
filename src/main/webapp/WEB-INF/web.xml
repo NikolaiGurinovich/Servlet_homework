@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>MyFirstFilter</filter-name>
+    <filter-class>Fiters.MyFirstFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>MyFirstFilter</filter-name>
+    <servlet-name>AgeServlet</servlet-name>
+  </filter-mapping>
+
+  <listener>
+    <listener-class>Listeners.ContextUpListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>Listeners.RequestListenerTMS</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>AgeServlet</servlet-name>
+    <servlet-class>AgeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AgeServlet</servlet-name>
+    <url-pattern>/age-servlet</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>

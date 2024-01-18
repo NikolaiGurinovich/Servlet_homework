@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.LocalTime;
 
 @WebServlet(value = "/age-servlet")
 public class AgeServlet extends HttpServlet {
